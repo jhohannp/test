@@ -7,3 +7,8 @@ BRAZILIAN DRINKS - COMO PUBLICAR
 5. Teste em pagespeed.web.dev depois de publicar.
 
 Os arquivos editaveis ficam em site-src (index.src.html, styles.css, app.js); rode build.py para regerar.
+
+FORMULARIO DE CONTATO (contato.html)
+- Hoje, sem servico configurado, ao enviar o formulario abre o app de e-mail do visitante ja preenchido (para comercial@braziliandrinks.com.br).
+- Para receber as mensagens direto na caixa de entrada, crie um formulario em um servico como Formspree (formspree.io), copie a URL e cole em contato.html no atributo data-endpoint="" da tag <form id="contactForm">. O envio passa a ser feito sem sair da pagina.
+- Para mudar o e-mail de destino sem servico, troque comercial@braziliandrinks.com.br em contato.html e app.js.
