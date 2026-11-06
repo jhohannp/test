@@ -1,0 +1,9 @@
+BRAZILIAN DRINKS - COMO PUBLICAR
+
+1. Envie TODO o conteudo desta pasta (index.html, app.js, assets/, robots.txt, sitemap.xml) para a raiz da hospedagem.
+2. Troque "https://SEU-DOMINIO.com.br" pelo dominio real em: index.html (canonical, og:url, og:image, JSON-LD), robots.txt e sitemap.xml.
+3. Links das lojas (Easy Drinks, Wewi, Drinkiss) estao como "#": coloque as URLs reais.
+4. Ative gzip/brotli e cache longo para /assets (a maioria das hospedagens ja faz).
+5. Teste em pagespeed.web.dev depois de publicar.
+
+Os arquivos editaveis ficam em site-src (index.src.html, styles.css, app.js); rode build.py para regerar.
