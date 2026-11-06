@@ -1,8 +1,8 @@
 BRAZILIAN DRINKS - COMO PUBLICAR
 
-1. Envie TODO o conteudo desta pasta (index.html, app.js, assets/, robots.txt, sitemap.xml) para a raiz da hospedagem.
-2. Troque "https://SEU-DOMINIO.com.br" pelo dominio real em: index.html (canonical, og:url, og:image, JSON-LD), robots.txt e sitemap.xml.
-3. Links das lojas (Easy Drinks, Wewi, Drinkiss) estao como "#": coloque as URLs reais.
+1. Envie TODO o conteudo desta pasta (index.html, portfolio.html, historia.html, contato.html, app.js, assets/, favicon.ico, site.webmanifest, robots.txt, sitemap.xml) para a raiz da hospedagem.
+2. Troque "https://SEU-DOMINIO.com.br" pelo dominio real em: TODAS as paginas .html (canonical, og:url, og:image, twitter:image, JSON-LD), robots.txt e sitemap.xml. (Buscar e substituir em todos os arquivos.)
+3. Links de lojas e sites das marcas ja apontam para easydrinks.com.br, loja.easydrinks.com.br, wewi.com.br e drinkiss.bar.
 4. Ative gzip/brotli e cache longo para /assets (a maioria das hospedagens ja faz).
 5. Teste em pagespeed.web.dev depois de publicar.
 
@@ -12,3 +12,12 @@ FORMULARIO DE CONTATO (contato.html)
 - Hoje, sem servico configurado, ao enviar o formulario abre o app de e-mail do visitante ja preenchido (para comercial@braziliandrinks.com.br).
 - Para receber as mensagens direto na caixa de entrada, crie um formulario em um servico como Formspree (formspree.io), copie a URL e cole em contato.html no atributo data-endpoint="" da tag <form id="contactForm">. O envio passa a ser feito sem sair da pagina.
 - Para mudar o e-mail de destino sem servico, troque comercial@braziliandrinks.com.br em contato.html e app.js.
+
+
+FOTOS PENDENTES
+- Trocar a foto final de historia.html (secao do video, hoje assets/foto-wewi-brinde.webp).
+- Depois de publicar, teste o card de compartilhamento colando o link no WhatsApp/LinkedIn e em developers.facebook.com/tools/debug (limpar o cache do Facebook/WhatsApp se a imagem nao atualizar).
+
+TRANSICAO ENTRE PAGINAS
+- Chrome/Edge/Safari recentes: ao clicar num link, a pagina atual escurece e a nova abre por cima, em retangulo (CSS @view-transition em styles.css). Outros navegadores: loader curto a partir da segunda pagina.
+- Duracao: .95s em styles.css (bloco 'transicao entre paginas').
